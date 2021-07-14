@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(193, 195, 193, 0.5);
+    font-family: sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.global-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.button {
+    padding: 15px 35px;
+    background-color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color .2s ease-in;
+}
+
+.button:hover {
+    background-color: rgb(48, 47, 47);
+}
