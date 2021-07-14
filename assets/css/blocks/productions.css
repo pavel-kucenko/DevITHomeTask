@@ -1,0 +1,31 @@
+.productions {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.productions-title {
+    padding-bottom: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.productions-products-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.product-card {
+    width: 25%;
+}
+.product-card-img {
+    margin-bottom: 20px;
+}
+.product-card-about {
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.productions-button-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
