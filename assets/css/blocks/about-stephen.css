@@ -1,0 +1,54 @@
+.about-stepfen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 600px;
+    padding: 20px;
+    padding-bottom: 100px;
+    position: relative;
+
+    background-image: url(./../../img/about-stephen-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-stepfen::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(66, 64, 64, 0.589);
+    z-index: 1;
+}
+
+.about-stephen-content {
+    position: relative;
+    max-width: 400px;
+    text-align: center;
+    z-index: 2;
+}
+
+.about-stephen-title {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    color: rgb(185, 185, 185);
+}
+
+.about-stephen-link {
+    padding-bottom: 15px;
+    font-size: 1rem;
+    color: rgb(185, 185, 185);
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(218, 211, 211);
+}
+
+.about-stephen-link:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
