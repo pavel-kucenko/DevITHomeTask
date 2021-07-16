@@ -46,6 +46,8 @@
     color: rgb(185, 185, 185);
     text-transform: uppercase;
     border-bottom: 3px solid rgb(218, 211, 211);
+
+    transition: color .3s ease-in;
 }
 
 .about-stephen-link:hover {

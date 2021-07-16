@@ -1,0 +1,14 @@
+.logos {
+    display: flex;
+    justify-content: center;
+    padding: 100px 10px;
+    background-color: #fff;
+}
+
+.logo-wrapper {
+    width: 150px;
+}
+
+.logo-wrapper:not(:last-child) {
+    margin-right: 15px;
+}

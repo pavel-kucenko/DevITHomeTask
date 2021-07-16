@@ -18,6 +18,12 @@ a {
     text-decoration: none;
 }
 
+a,
+a:active,
+a:link {
+    outline: none;
+}
+
 img {
     width: 100%;
     height: 100%;
