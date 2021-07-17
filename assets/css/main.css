@@ -2,10 +2,10 @@
 @import url(./base/base.css);
 @import url(./blocks/header.css);
 @import url(./blocks/header-nav.css);
-@import url(./blocks/productions.css);
-@import url(./blocks/about-stephen.css);
-@import url(./blocks/quiz.css);
-@import url(./blocks/technology.css);
-@import url(./blocks/logos.css);
-@import url(./blocks/pictures.css);
+@import url(./blocks/section-productions.css);
+@import url(./blocks/section-about-stephen.css);
+@import url(./blocks/section-quiz.css);
+@import url(./blocks/section-technology.css);
+@import url(./blocks/section-logos.css);
+@import url(./blocks/section-pictures.css);
 @import url(./blocks/footer.css);
