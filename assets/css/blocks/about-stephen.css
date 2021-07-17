@@ -45,12 +45,13 @@
     font-size: 1rem;
     color: rgb(185, 185, 185);
     text-transform: uppercase;
-    border-bottom: 3px solid rgb(218, 211, 211);
+    border-bottom: 3px solid rgb(185, 185, 185);
 
     transition: color .3s ease-in;
+    transition: border-color .3s ease-in;
 }
 
 .about-stephen-link:hover {
     color: #fff;
-    border-bottom: 3px solid #fff;
+    border-color: #fff;
 }
