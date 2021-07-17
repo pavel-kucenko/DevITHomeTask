@@ -9,3 +9,6 @@
 @import url(./blocks/section-logos.css);
 @import url(./blocks/section-pictures.css);
 @import url(./blocks/footer.css);
+
+/* Page products */
+@import url(./blocks/page-products.css);
