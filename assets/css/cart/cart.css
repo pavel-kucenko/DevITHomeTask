@@ -1,0 +1,143 @@
+.cart {
+    background-color: #fff;
+    padding: 50px 50px 50px 100px;
+}
+
+.cart-header {
+    text-align: center;
+}
+
+.cart-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cart-header-link {
+    margin-bottom: 50px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.cart-table {
+    display: flex;
+}
+
+.cart-table-price {
+    flex-grow: 2;
+
+
+}
+
+.cart-table-quanity,
+.cart-table-total {
+    flex-grow: 1;
+}
+
+.cart-table-product {
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+
+.cart-table-title {
+    padding: 0 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cart-table-product-block {
+    display: flex;
+    align-items: center;
+}
+
+.cart-table-product-img-wrapper {
+    width: 80px;
+    margin-right: 50px;
+}
+
+.cart-table-product-block,
+.cart-table-title-block,
+.cart-table-title-block,
+.cart-table-total-block {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    border-top: 1px solid rgba(155, 152, 152, 0.404);
+    border-bottom: 1px solid rgba(155, 152, 152, 0.404);
+}
+
+.cart-table-product-name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cart-table-product-remove {
+    color: #000;
+    text-decoration: underline;
+}
+
+.cart-table-quanity-value {
+    width: 60px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.cart-subtotal {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.cart-subtotal-block {
+    font-size: 1.2rem;
+}
+.subtotal-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.subtotal-title {
+    margin-right: 20px;
+    width: 120px;
+}
+.subtotal-value {
+    width: 120px;
+
+}
+.subtotal-text {
+    margin-bottom: 50px;
+    font-size: .9rem;
+}
+.cart-button-wrapper {
+    margin-left: auto;
+    max-width: 165px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .cart {
+        background-color: #fff;
+        padding: 50px 10px;
+    }
+
+    .cart-table {
+        flex-direction: column;
+    }
+
+    .cart-table-product,
+    .cart-table-price,
+    .cart-table-quanity,
+    .cart-table-total {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .cart-table-product-block,
+    .cart-table-title-block,
+    .cart-table-title-block,
+    .cart-table-total-block {
+        justify-content: center;
+    }
+
+}

@@ -7,3 +7,31 @@
     background-color: rgba(216, 218, 216, 0.5);
 
 }
+
+.products-row {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.productions-products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-productions-product-card {
+    width: 33%;
+}
+
+@media screen and (max-width: 768px) {
+    .productions-products-wrapper {
+        flex-direction: column;
+    }
+
+    .products-row {
+        padding: 0 20px;
+    }
+
+    .page-productions-product-card {
+        width: 50%;
+    }
+}

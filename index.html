@@ -5,46 +5,47 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="assets/js/jquery.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
         <title>Fancy Faces</title>
     </head>
-    <body>
+    <body id="app">
         <div
             class="global-container">
             <!-- header -->
-            <header
-                class="header">
-                <!-- header-nav -->
-                <nav class="header-nav">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">production</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">promotions</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">about us</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">contacts</a>
-                        </li>
-                    </ul>
-                    <div class="header-nav-logo">
-                        <a href="#"><img src="./assets/img/header-nav/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="header-nav-cart">
-                        <a href="#"><img src="./assets/img/header-nav/cart.svg" alt="Cart"></a>
-                    </div>
-                </nav>
-                <!--// header-nav -->
-                <div class="header-content">
-                    <h1 class="header-content-title">new york aesthetic/
-                        <span>japanese technology</span>
-                    </h1>
-                    <div class="header-button-wrapper">
-                        <a href="#" class="button">see the collection</a>
-                    </div>
+            <header class="header">
+            <!-- header-nav -->
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a href="./pages/products.html" class="header-nav-link">products</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">promotions</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">about us</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">contacts</a>
+                    </li>
+                </ul>
+                <div class="header-nav-logo">
+                    <a href="./index.html"><img src="./assets/img/header-nav/logo.png" alt="logo"></a>
                 </div>
+                <div class="header-nav-cart">
+                    <a href="#"><img src="./assets/img/header-nav/cart.svg" alt="Cart"></a>
+                </div>
+            </nav>
+            <!--// header-nav -->
+            <div class="header-content">
+                <h1 class="header-content-title">new york aesthetic/
+                    <span>japanese technology</span>
+                </h1>
+                <div class="header-button-wrapper">
+                    <a onClick="historyResolver('products', '/test.html')" href="#" class="button">see the collection</a>
+                </div>
+            </div>
             </header>
             <!--// header -->
             <!-- main  -->
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                     <div class="productions-button-wrapper">
-                        <a href="#" class="button">view all best collections</a>
+                        <a href="./pages/products.html" class="button">view all best collections</a>
                     </div>
                 </section>
                 <!--// section productions -->
@@ -173,7 +174,7 @@
                             </div>
                             <div class="pictures-button-wrapper">
                                 <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">by now</a>
+                                <a href="#" class="button">view</a>
                             </div>
                         </div>
                         <div class="pictures-img-wrapper bg-fiolet">
@@ -182,7 +183,7 @@
                             </div>
                             <div class="pictures-button-wrapper">
                                 <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">by now</a>
+                                <a href="#" class="button">view</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +194,7 @@
                             </div>
                             <div class="pictures-button-wrapper">
                                 <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">by now</a>
+                                <a href="#" class="button">view</a>
                             </div>
                         </div>
                         <div class="pictures-img-wrapper bg-gradient wrapper-height">
@@ -202,7 +203,7 @@
                             </div>
                             <div class="pictures-button-wrapper">
                                 <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">by now</a>
+                                <a href="#" class="button">view</a>
                             </div>
                         </div>
                         <div class="pictures-img-wrapper bg-fiolet wrapper-height">
@@ -211,7 +212,7 @@
                             </div>
                             <div class="pictures-button-wrapper">
                                 <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">by now</a>
+                                <a href="#" class="button">view</a>
                             </div>
                         </div>
                     </div>

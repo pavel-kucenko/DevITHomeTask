@@ -11,4 +11,10 @@
 @import url(./blocks/footer.css);
 
 /* Page products */
-@import url(./blocks/page-products.css);
+@import url(./page-products/page-products.css);
+
+/* Page product */
+@import url(./page-product/page-product.css);
+
+/* Cart  */
+@import url(./cart/cart.css);
