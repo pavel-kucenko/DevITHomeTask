@@ -9,16 +9,14 @@
         <script src="assets/js/main.js" defer></script>
         <title>Fancy Faces</title>
     </head>
-    <body id="app">
+    <body>
         <div
             class="global-container">
-            <!-- header -->
-            <header class="header">
             <!-- header-nav -->
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
-                        <a href="./pages/products.html" class="header-nav-link">products</a>
+                        <a href="#" class="header-nav-link link-products">products</a>
                     </li>
                     <li class="header-nav-item">
                         <a href="#" class="header-nav-link">promotions</a>
@@ -31,194 +29,198 @@
                     </li>
                 </ul>
                 <div class="header-nav-logo">
-                    <a href="./index.html"><img src="./assets/img/header-nav/logo.png" alt="logo"></a>
+                    <a href="#" class="link-home"><img src="./assets/img/header-nav/logo.png" alt="logo"></a>
                 </div>
                 <div class="header-nav-cart">
                     <a href="#"><img src="./assets/img/header-nav/cart.svg" alt="Cart"></a>
                 </div>
             </nav>
             <!--// header-nav -->
-            <div class="header-content">
-                <h1 class="header-content-title">new york aesthetic/
-                    <span>japanese technology</span>
-                </h1>
-                <div class="header-button-wrapper">
-                    <a onClick="historyResolver('products', '/test.html')" href="#" class="button">see the collection</a>
-                </div>
-            </div>
-            </header>
-            <!--// header -->
             <!-- main  -->
-            <main>
-                <!-- section productions -->
-                <section class="productions">
-                    <h2 class="productions-title">our bests selling</h2>
-                    <div class="productions-products-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-img">
-                                <img src="./assets/img/section-productions/product-1.png" alt="product image">
+            <div id="spa">
+                <!-- header -->
+                <header id="head" class="header">
+                <div class="header-content">
+                    <h1 class="header-content-title">new york aesthetic/
+                        <span>japanese technology</span>
+                    </h1>
+                    <div class="header-button-wrapper">
+                        <a href="#" class="button link-products">see the collection</a>
+                    </div>
+                </div>
+                </header>
+                <!--// header -->
+                <main>
+                    <!-- section productions -->
+                    <section class="productions">
+                        <h2 class="productions-title">our bests selling</h2>
+                        <div class="productions-products-wrapper">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="./assets/img/section-productions/product-1.png" alt="product image">
+                                </div>
+                                <p class="product-card-about">
+                                    Lorem ipsum dolor sit
+                                </p>
                             </div>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-img">
-                                <img src="./assets/img/section-productions/product-2.png" alt="product image">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="./assets/img/section-productions/product-2.png" alt="product image">
+                                </div>
+                                <p class="product-card-about">
+                                    Lorem ipsum dolor sit
+                                </p>
                             </div>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-img">
-                                <img src="./assets/img/section-productions/product-3.png" alt="product image">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="./assets/img/section-productions/product-3.png" alt="product image">
+                                </div>
+                                <p class="product-card-about">
+                                    Lorem ipsum dolor sit
+                                </p>
                             </div>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-img">
-                                <img src="./assets/img/section-productions/product-4.png" alt="product image">
-                            </div>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                    </div>
-                    <div class="productions-button-wrapper">
-                        <a href="./pages/products.html" class="button">view all best collections</a>
-                    </div>
-                </section>
-                <!--// section productions -->
-                <!-- section about-stepfen -->
-                <section class="about-stepfen">
-                    <div class="about-stephen-content">
-                        <h2 class="about-stephen-title">Quote from Stephen about his styling and care philosophy</h2>
-                        <a href="#" class="about-stephen-link">about stephen</a>
-                    </div>
-                </section>
-                <!--// section about-stepfen -->
-                <!-- section quiz  -->
-                <section class="quiz">
-                    <p class="quiz-title">What's base for my hair?</p>
-                    <a href="#" class="quiz-link">Take the quiz<img src="./assets/img/section-quiz/arrow.svg" alt="arrow"></a>
-                    <div class="quiz-steps-wrapper">
-                        <div class="quiz-step">
-                            <div class="quiz-step-img">
-                                <img src="./assets/img/section-quiz/hair-icon.png" alt="hair-icon">
-                            </div>
-                            <h3 class="quiz-step-title">Step 1: My hair type</h3>
-                            <p class="quiz-step-info">
-                                <span>Lorem ipsum dolor sit</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
-                            </p>
-                        </div>
-                        <div class="quiz-step">
-                            <div class="quiz-step-img">
-                                <img src="./assets/img/section-quiz/dryer-icon.png" alt="dryer-icon">
-                            </div>
-                            <h3 class="quiz-step-title">Step 2: My style</h3>
-                            <p class="quiz-step-info">
-                                <span>Lorem ipsum dolor sit</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
-                            </p>
-                        </div>
-                        <div class="quiz-step">
-                            <div class="quiz-step-img">
-                                <img src="./assets/img/section-quiz/shampoo-icon.png" alt="shampoo-icon">
-                            </div>
-                            <h3 class="quiz-step-title">Step 3: routine</h3>
-                            <p class="quiz-step-info">
-                                <span>Lorem ipsum dolor sit</span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!--// section quiz  -->
-                <!-- section technology  -->
-                <section class="technology">
-                    <div class="technology-content">
-                        <h2 class="technology-title">technology amplified by japanse ingenuity</h2>
-                        <a href="#" class="technology-link">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat deleniti laborum exercitationem reiciendis quod qui sequi voluptatum ratione neque ea repellat ullam assumenda dolorum quo, explicabo quam iste nihil!</a>
-                    </div>
-                </section>
-                <!--// section technology  -->
-                <!-- section logos  -->
-                <section class="logos">
-                    <div class="logo-wrapper">
-                        <img src="./assets/img/section-logos/glamour.png" alt="glamour logo">
-                    </div>
-                    <div class="logo-wrapper">
-                        <img src="./assets/img/section-logos/bazaar.png" alt="bazaar logo">
-                    </div>
-                    <div class="logo-wrapper">
-                        <img src="./assets/img/section-logos/byrdie.png" alt="byrdie logo">
-                    </div>
-                    <div class="logo-wrapper">
-                        <img src="./assets/img/section-logos/schwarzkopf.png" alt="schwarzkopf logo">
-                    </div>
-                    <div class="logo-wrapper">
-                        <img src="./assets/img/section-logos/estel.png" alt="estel logo">
-                    </div>
-                </section>
-                <!--// section logos  -->
-                <!-- section pictures  -->
-                <section class="pictures">
-                    <div class="pictures-row">
-                        <div class="pictures-img-wrapper bg-gradient">
-                            <div class="img-wrapper">
-                                <img src="./assets/img/section-pictures/cream.png" alt="cream">
-                            </div>
-                            <div class="pictures-button-wrapper">
-                                <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">view</a>
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="./assets/img/section-productions/product-4.png" alt="product image">
+                                </div>
+                                <p class="product-card-about">
+                                    Lorem ipsum dolor sit
+                                </p>
                             </div>
                         </div>
-                        <div class="pictures-img-wrapper bg-fiolet">
-                            <div class="img-wrapper">
-                                <img src="./assets/img/section-pictures/nail.png" alt="nail">
+                        <div class="productions-button-wrapper">
+                            <a href="./pages/products.html" class="button">view all best collections</a>
+                        </div>
+                    </section>
+                    <!--// section productions -->
+                    <!-- section about-stepfen -->
+                    <section class="about-stepfen">
+                        <div class="about-stephen-content">
+                            <h2 class="about-stephen-title">Quote from Stephen about his styling and care philosophy</h2>
+                            <a href="#" class="about-stephen-link">about stephen</a>
+                        </div>
+                    </section>
+                    <!--// section about-stepfen -->
+                    <!-- section quiz  -->
+                    <section class="quiz">
+                        <p class="quiz-title">What's base for my hair?</p>
+                        <a href="#" class="quiz-link">Take the quiz<img src="./assets/img/section-quiz/arrow.svg" alt="arrow"></a>
+                        <div class="quiz-steps-wrapper">
+                            <div class="quiz-step">
+                                <div class="quiz-step-img">
+                                    <img src="./assets/img/section-quiz/hair-icon.png" alt="hair-icon">
+                                </div>
+                                <h3 class="quiz-step-title">Step 1: My hair type</h3>
+                                <p class="quiz-step-info">
+                                    <span>Lorem ipsum dolor sit</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
+                                </p>
                             </div>
-                            <div class="pictures-button-wrapper">
-                                <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">view</a>
+                            <div class="quiz-step">
+                                <div class="quiz-step-img">
+                                    <img src="./assets/img/section-quiz/dryer-icon.png" alt="dryer-icon">
+                                </div>
+                                <h3 class="quiz-step-title">Step 2: My style</h3>
+                                <p class="quiz-step-info">
+                                    <span>Lorem ipsum dolor sit</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
+                                </p>
+                            </div>
+                            <div class="quiz-step">
+                                <div class="quiz-step-img">
+                                    <img src="./assets/img/section-quiz/shampoo-icon.png" alt="shampoo-icon">
+                                </div>
+                                <h3 class="quiz-step-title">Step 3: routine</h3>
+                                <p class="quiz-step-info">
+                                    <span>Lorem ipsum dolor sit</span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis rerum provident!
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="pictures-row dn">
-                        <div class="pictures-img-wrapper bg-fiolet wrapper-height">
-                            <div class="img-wrapper">
-                                <img src="./assets/img/section-pictures/nail.png" alt="nail">
+                    </section>
+                    <!--// section quiz  -->
+                    <!-- section technology  -->
+                    <section class="technology">
+                        <div class="technology-content">
+                            <h2 class="technology-title">technology amplified by japanse ingenuity</h2>
+                            <a href="#" class="technology-link">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat deleniti laborum exercitationem reiciendis quod qui sequi voluptatum ratione neque ea repellat ullam assumenda dolorum quo, explicabo quam iste nihil!</a>
+                        </div>
+                    </section>
+                    <!--// section technology  -->
+                    <!-- section logos  -->
+                    <section class="logos">
+                        <div class="logo-wrapper">
+                            <img src="./assets/img/section-logos/glamour.png" alt="glamour logo">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="./assets/img/section-logos/bazaar.png" alt="bazaar logo">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="./assets/img/section-logos/byrdie.png" alt="byrdie logo">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="./assets/img/section-logos/schwarzkopf.png" alt="schwarzkopf logo">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="./assets/img/section-logos/estel.png" alt="estel logo">
+                        </div>
+                    </section>
+                    <!--// section logos  -->
+                    <!-- section pictures  -->
+                    <section class="pictures">
+                        <div class="pictures-row">
+                            <div class="pictures-img-wrapper bg-gradient">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/section-pictures/cream.png" alt="cream">
+                                </div>
+                                <div class="pictures-button-wrapper">
+                                    <h4 class="pictures-button-title">styling</h4>
+                                    <a href="#" class="button">view</a>
+                                </div>
                             </div>
-                            <div class="pictures-button-wrapper">
-                                <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">view</a>
+                            <div class="pictures-img-wrapper bg-fiolet">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/section-pictures/nail.png" alt="nail">
+                                </div>
+                                <div class="pictures-button-wrapper">
+                                    <h4 class="pictures-button-title">styling</h4>
+                                    <a href="#" class="button">view</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="pictures-img-wrapper bg-gradient wrapper-height">
-                            <div class="img-wrapper">
-                                <img src="./assets/img/section-pictures/cream.png" alt="cream">
+                        <div class="pictures-row dn">
+                            <div class="pictures-img-wrapper bg-fiolet wrapper-height">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/section-pictures/nail.png" alt="nail">
+                                </div>
+                                <div class="pictures-button-wrapper">
+                                    <h4 class="pictures-button-title">styling</h4>
+                                    <a href="#" class="button">view</a>
+                                </div>
                             </div>
-                            <div class="pictures-button-wrapper">
-                                <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">view</a>
+                            <div class="pictures-img-wrapper bg-gradient wrapper-height">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/section-pictures/cream.png" alt="cream">
+                                </div>
+                                <div class="pictures-button-wrapper">
+                                    <h4 class="pictures-button-title">styling</h4>
+                                    <a href="#" class="button">view</a>
+                                </div>
+                            </div>
+                            <div class="pictures-img-wrapper bg-fiolet wrapper-height">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/section-pictures/nail.png" alt="nail">
+                                </div>
+                                <div class="pictures-button-wrapper">
+                                    <h4 class="pictures-button-title">styling</h4>
+                                    <a href="#" class="button">view</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="pictures-img-wrapper bg-fiolet wrapper-height">
-                            <div class="img-wrapper">
-                                <img src="./assets/img/section-pictures/nail.png" alt="nail">
-                            </div>
-                            <div class="pictures-button-wrapper">
-                                <h4 class="pictures-button-title">styling</h4>
-                                <a href="#" class="button">view</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--// section pictures  -->
-            </main>
+                    </section>
+                    <!--// section pictures  -->
+                </main>
+            </div>
             <!--// main  -->
             <!-- footer  -->
             <footer class="footer">
