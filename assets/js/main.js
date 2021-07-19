@@ -13,20 +13,18 @@ function goTo(links, url, content) {
 
             document.querySelector('.header-nav').classList.add('nav-bg-product')
         })
-
-        if(content === './pages/product-test.html') {
-        }
     }
 }
 
+const linksCart = document.querySelectorAll(".link-cart");
+const linksHome = document.querySelectorAll(".link-home");
 
 setInterval(() => {
-    const linksProducts = document.querySelectorAll(".link-products");
-    const linksProduct = document.querySelectorAll(".link-product");
-    const linksCart = document.querySelectorAll(".link-cart");
-    const linksHome = document.querySelectorAll(".link-home");
-    goTo(linksProducts, '/products', './pages/products-test.html')
-    goTo(linksProduct, '/:id', './pages/product-test.html')
-    goTo(linksCart, '/cart', './pages/cart.html')
-    goTo(linksHome, '/home', './pages/test-home.html')
+    let linksProducts = document.querySelectorAll(".link-products");
+    let linksProduct = document.querySelectorAll(".link-product");
+    goTo(linksProducts, '/products', './../pages/products-test.html')
+    goTo(linksProduct, '/products/:id', './../pages/product-test.html')
 }, 1000)
+
+goTo(linksCart, '/cart', './../pages/cart.html')
+goTo(linksHome, '/', './../pages/test-home.html')
