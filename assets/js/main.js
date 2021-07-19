@@ -1,30 +1,21 @@
-function goTo(links, url, content) {
-    for (let i = 0; i < links.length; i++) {
-        
-        links[i].addEventListener('click', (e) => {
-            e.preventDefault();
-            history.pushState({}, '', url)
-            $("#spa").load(content)
-            
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+const templateCart = document.querySelector("#cart").content.querySelector(".cart");
+const templateProducts = document.querySelector("#products").content.querySelector(".page-products-main");
+const templateHome = document.querySelector("#home");
+const rootDiv = document.getElementById('spa');
 
-            document.querySelector('.header-nav').classList.add('nav-bg-product')
-        })
-    }
+const routes = {
+    '/' : templateHome.outerHTML,
+    '/products' : templateProducts.outerHTML,
+    '/cart' : templateCart.outerHTML
 }
 
-const linksCart = document.querySelectorAll(".link-cart");
-const linksHome = document.querySelectorAll(".link-home");
+// rootDiv.innerHTML = routes[window.location.pathname];
 
-setInterval(() => {
-    let linksProducts = document.querySelectorAll(".link-products");
-    let linksProduct = document.querySelectorAll(".link-product");
-    goTo(linksProducts, '/products', './../pages/products-test.html')
-    goTo(linksProduct, '/products/:id', './../pages/product-test.html')
-}, 1000)
+const onNavigate = (pathname) => {
+    window.history.pushState({}, pathname, window.location.origin + pathname);
+    rootDiv.innerHTML = routes[pathname];
+}
 
-goTo(linksCart, '/cart', './../pages/cart.html')
-goTo(linksHome, '/', './../pages/test-home.html')
+window.onpopstate = () => {
+    rootDiv.innerHTML = routes[window.location.pathname];
+}
