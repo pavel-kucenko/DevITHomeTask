@@ -19,6 +19,7 @@
     width: 25%;
 }
 .product-card-img {
+    display: block;
     margin-bottom: 20px;
 }
 .product-card-about {

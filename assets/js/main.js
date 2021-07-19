@@ -1,24 +1,32 @@
-const linkProducts = document.querySelectorAll(".link-products");
+function goTo(links, url, content) {
+    for (let i = 0; i < links.length; i++) {
+        
+        links[i].addEventListener('click', (e) => {
+            e.preventDefault();
+            history.pushState({}, '', url)
+            $("#spa").load(content)
+            
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
 
-for (let i = 0; i < linkProducts.length; i++) {
-    linkProducts[i].addEventListener('click', (e) => {
-        e.preventDefault();
-        history.pushState({}, 'products', '/pages/test.html')
-        $("#head").remove();
-        $("#spa").load("./pages/test.html")
-    })
+            document.querySelector('.header-nav').classList.add('nav-bg-product')
+        })
+
+        if(content === './pages/product-test.html') {
+        }
+    }
 }
 
 
-const linkHome = document.querySelectorAll(".link-home");
-
-console.log(linkHome);
-
-for (let i = 0; i < linkHome.length; i++) {
-    linkHome[i].addEventListener('click', (e) => {
-        e.preventDefault();
-        history.pushState({}, 'home', '/')
-        $("html").load("./index.html")
-    })
-}
-
+setInterval(() => {
+    const linksProducts = document.querySelectorAll(".link-products");
+    const linksProduct = document.querySelectorAll(".link-product");
+    const linksCart = document.querySelectorAll(".link-cart");
+    const linksHome = document.querySelectorAll(".link-home");
+    goTo(linksProducts, '/products', './pages/products-test.html')
+    goTo(linksProduct, '/:id', './pages/product-test.html')
+    goTo(linksCart, '/cart', './pages/cart.html')
+    goTo(linksHome, '/home', './pages/test-home.html')
+}, 1000)
