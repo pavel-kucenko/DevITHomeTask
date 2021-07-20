@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <script src="assets/js/jquery.js" defer></script>
-        <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/routing.js" defer></script>
+        <script src="assets/js/cart.js" defer></script>
         <title>Fancy Faces</title>
     </head>
     <body>
@@ -16,23 +16,23 @@
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
+                        <a href="#" class="header-nav-link link-home">home</a>
+                    </li>
+                    <li class="header-nav-item">
                         <a href="#" class="header-nav-link link-products">products</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="#" class="header-nav-link">promotions</a>
+                        <a href="#" class="header-nav-link link-cart">cart</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="#" class="header-nav-link">about us</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-link">contacts</a>
+                        <a href="#contacts" class="header-nav-link">contacts</a>
                     </li>
                 </ul>
                 <div class="header-nav-logo">
-                    <a href="#" class="link-home" onclick="onNavigate('/'); return false;"><img src="./assets/img/header-nav/logo.png" alt="logo"></a>
+                    <a href="#"><img class="link-home" src="./assets/img/header-nav/logo.png" alt="logo"></a>
                 </div>
                 <div class="header-nav-cart">
-                    <a href="#" class="link-cart" onclick="onNavigate('/cart'); return false;"><img src="./assets/img/header-nav/cart.svg" alt="Cart"></a>
+                    <a href="#"><img class="link-cart" src="./assets/img/header-nav/cart.svg" alt="Cart"></a>
                 </div>
             </nav>
             <!--// header-nav -->
@@ -57,32 +57,32 @@
                             <h2 class="productions-title">our bests selling</h2>
                             <div class="productions-products-wrapper">
                                 <div class="product-card">
-                                    <a href="#" class="product-card-img link-product">
-                                        <img src="./assets/img/section-productions/product-1.png" alt="product image">
+                                    <a href="#" class="product-card-img">
+                                        <img class="link-product" src="./assets/img/section-productions/product-1.png" alt="product image">
                                     </a>
                                     <p class="product-card-about">
                                         Lorem ipsum dolor sit
                                     </p>
                                 </div>
                                 <div class="product-card">
-                                    <a href="#" class="product-card-img link-product">
-                                        <img src="./assets/img/section-productions/product-2.png" alt="product image">
+                                    <a href="#" class="product-card-img">
+                                        <img class="link-product" class="link-product" src="./assets/img/section-productions/product-2.png" alt="product image">
                                     </a>
                                     <p class="product-card-about">
                                         Lorem ipsum dolor sit
                                     </p>
                                 </div>
                                 <div class="product-card">
-                                    <a href="#" class="product-card-img link-product">
-                                        <img src="./assets/img/section-productions/product-3.png" alt="product image">
+                                    <a href="#" class="product-card-img">
+                                        <img class="link-product" src="./assets/img/section-productions/product-3.png" alt="product image">
                                     </a>
                                     <p class="product-card-about">
                                         Lorem ipsum dolor sit
                                     </p>
                                 </div>
                                 <div class="product-card">
-                                    <a href="#" class="product-card-img link-product">
-                                        <img src="./assets/img/section-productions/product-4.png" alt="product image">
+                                    <a href="#" class="product-card-img">
+                                        <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
                                     </a>
                                     <p class="product-card-about">
                                         Lorem ipsum dolor sit
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="productions-button-wrapper">
-                                <a  href="./pages/products.html" class="button link-products">view all best collections</a>
+                                <a  href="#" class="button link-products">view all best collections</a>
                             </div>
                         </section>
                         <!--// section productions -->
@@ -226,7 +226,7 @@
             </div>
             <!--// main  -->
             <!-- footer  -->
-            <footer class="footer">
+            <footer id="contacts" class="footer">
                 <div class="footer-contacts">
                     <h3 class="footer-caption">about us</h3>
                     <p class="footer-contacts-text">
@@ -251,16 +251,16 @@
                     <h3 class="footer-caption">works</h3>
                     <ul class="footer-links-list">
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                     </ul>
                 </div>
@@ -268,28 +268,28 @@
                     <h3 class="footer-caption">services</h3>
                     <ul class="footer-links-list">
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="" class="footer-link">Link</a>
+                            <a href="#" class="footer-link">Link</a>
                         </li>
                     </ul>
                 </div>
@@ -306,32 +306,31 @@
             </footer>
             <!--// footer  -->
         </div>
-
-
+        <!-- template products  -->
         <template id="products">
             <div class="page-products-main">
                 <section class="products-row">
                     <h2 class="productions-title">Shampoo</h2>
                     <div class="productions-products-wrapper">
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-1.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-1.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-1.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-1.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-1.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-1.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
@@ -343,53 +342,24 @@
                     <h2 class="productions-title">Hair Masks</h2>
                     <div class="productions-products-wrapper">
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-2.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-2.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-2.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-2.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-2.png" alt="product image">
-                            </a>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="products-row">
-                    <h2 class="productions-title">style memory series</h2>
-                    <div class="productions-products-wrapper">
-                        <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-3.png" alt="product image">
-                            </a>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                        <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-3.png" alt="product image">
-                            </a>
-                            <p class="product-card-about">
-                                Lorem ipsum dolor sit
-                            </p>
-                        </div>
-                        <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-3.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-2.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
@@ -401,48 +371,77 @@
                     <h2 class="productions-title">style memory series</h2>
                     <div class="productions-products-wrapper">
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-3.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-3.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-3.png" alt="product image">
+                            </a>
+                            <p class="product-card-about">
+                                Lorem ipsum dolor sit
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="products-row">
+                    <h2 class="productions-title">style memory series</h2>
+                    <div class="productions-products-wrapper">
+                        <div class="product-card page-productions-product-card">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
                             </p>
                         </div>
                         <div class="product-card page-productions-product-card">
-                            <a href="#" class="product-card-img link-product">
-                                <img src="./../assets/img/section-productions/product-4.png" alt="product image">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
+                            </a>
+                            <p class="product-card-about">
+                                Lorem ipsum dolor sit
+                            </p>
+                        </div>
+                        <div class="product-card page-productions-product-card">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
+                            </a>
+                            <p class="product-card-about">
+                                Lorem ipsum dolor sit
+                            </p>
+                        </div>
+                        <div class="product-card page-productions-product-card">
+                            <a href="#" class="product-card-img">
+                                <img class="link-product" src="./assets/img/section-productions/product-4.png" alt="product image">
                             </a>
                             <p class="product-card-about">
                                 Lorem ipsum dolor sit
@@ -452,26 +451,24 @@
                 </section>
                 <section class="quiz page-products-quiz--bg">
                     <p class="quiz-title">What's base for my hair?</p>
-                    <a href="#" class="quiz-link">Take the quiz<img src="./../assets/img/section-quiz/arrow.svg" alt="arrow"></a>
+                    <a href="#" class="quiz-link">Take the quiz<img src="./assets/img/section-quiz/arrow.svg" alt="arrow"></a>
                 </section>
             </div>
-            
-            
         </template>
+        <!--// template products  -->
+        <!-- template cart  -->
         <template id="cart">
             <form class="cart">
                 <div class="cart-header">
                     <h2 class="cart-title">Your cart</h2>
                     <a href="#" class="cart-header-link">Continue shopping</a>
                 </div>    
-                
                 <div class="cart-table">
-    
                     <div class="cart-table-product">
                         <p class="cart-table-title">product</p>
                         <div class="cart-table-product-block">
                             <div class="cart-table-product-img-wrapper">
-                                <img src="./../assets/img/section-pictures/nail.png" alt="nail">
+                                <img src="./assets/img/section-pictures/nail.png" alt="nail">
                             </div>
                             <div class="cart-table-product-name-block">
                                 <p class="cart-table-product-name">Nail polish</p>
@@ -479,21 +476,18 @@
                             </div>
                         </div>
                     </div>
-    
                     <div class="cart-table-price">
                         <p class="cart-table-title">price</p>
                         <div class="cart-table-title-block">
                             <p class="cart-table-price-value">₴14.99</p>                    
                         </div>
                     </div>
-    
                     <div class="cart-table-quanity">
                         <p class="cart-table-title">quanity</p>
                         <div class="cart-table-title-block">
                             <input class="cart-table-quanity-value" type="number" value="1" min="1" max="99">
                         </div>
                     </div>
-    
                     <div class="cart-table-total">
                         <p class="cart-table-title">total</p>
                         <div class="cart-table-total-block">
@@ -502,8 +496,6 @@
                     </div>
     
                 </div>
-    
-    
                 <div class="cart-subtotal">
                     <div class="cart-subtotal-block">
                         <div class="subtotal-row">
@@ -518,5 +510,93 @@
                 </div>
             </form>
         </template>
+        <!--// template cart  -->
+        <!-- template product  -->
+        <template id="product">
+            <div class="product-content">
+                <section class="buy-product-card">
+                    <div class="card-img-wrapper">
+                        <img src="./../assets/img/section-pictures/cream.png" alt="Cream">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-info-title">LOREM IPSUM DOLOR - sit amet</h2>
+                        <p class="card-info-id">546</p>
+                        <div class="card-info-rating">
+                            <div class="star-wrapper">
+                                <img src="./../assets/img/product-card/star.svg" alt="star">
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="./../assets/img/product-card/star.svg" alt="star">
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="./../assets/img/product-card/star.svg" alt="star">
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="./../assets/img/product-card/star.svg" alt="star">
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="./../assets/img/product-card/star-outline.svg" alt="star">
+                            </div>
+                            <p class="card-info-rating-text">rating</p>
+                        </div>
+                        <p class="card-info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis rem nam magnam rerum perspiciatis quisquam dolor ipsum, adipisci minima cumque quasi
+                        </p>
+                        <ul class="card-info-list">
+                            <li class="card-info-list-item">Lorem ipsum dolor sit</li>
+                            <li class="card-info-list-item">Lorem ipsum dolor sit</li>
+                            <li class="card-info-list-item">Lorem ipsum dolor sit</li>
+                        </ul>
+                        <a href="#" class="button button-transparent card-button">add to cart</a>
+                        <a href="#" class="button card-button">by now</a>
+                        <p class="card-info-bottom-text">
+                            Lorem ipsum
+                        </p>
+                    </div>
+                </section>
+                <section class="product-quote">
+                    <div class="product-quote-content">
+                        <p class="product-quote-content-text">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae animi, recusandae ex repellendus nulla ipsam autem reprehenderit magnam nam veniam, velit est tempore optio. Doloremque recusandae corrupti perspiciatis dolorem."
+                        </p>
+                        <p class="product-quote-content-text">- Lorem ipsum</p>
+                    </div>
+                </section>
+                <section class="about-product">
+                    <div class="about-product-text">
+                        <h4 class="about-product-text-title">Lorem</h4>
+                        <p class="about-product-text-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </p>
+                        <h4 class="about-product-text-title">Lorem ipsum</h4>
+                        <p class="about-product-text-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde harum hic minima, nostrum numquam saepe in velit, quos eum omnis corporis! Impedit, quis earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde harum hic minima, nostrum numquam saepe in velit, quos eum omnis corporis! Impedit, quis earum.
+                        </p>
+                        <h4 class="about-product-text-title">Lorem ips dolor</h4>
+                        <p class="about-product-text-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti, harum ea optio totam omnis tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti, harum ea optio totam omnis tempora.
+                        </p>
+                    </div>
+                    <div class="about-product-img-wrapper">
+                        <img src="./../assets/img/section-productions/product-4.png" alt="cream">
+                    </div>
+                </section>
+                <section class="product-technology">
+                    <div class="product-technology-content">
+                        <div class="product-technology-content-img-wrapper dn">
+                            <img src="./../assets/img/product/hair.jpg" alt="hair">
+                        </div>
+                        <div class="product-technology-content-text">
+                            <p class="product-technology-content-text-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, itaque repellendus expedita, assumenda quam nobis voluptatum amet est quas repudiandae fugiat eos cum optio vero.
+                            </p>
+                            <p class="product-technology-content-text-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, itaque repellendus expedita, assumenda quam nobis voluptatum amet est quas repudiandae fugiat eos cum optio vero.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </template>
+        <!--// template product  -->
     </body>
 </html>
