@@ -5,7 +5,6 @@ const templateHome = document.querySelector("#home");
 const nav = document.querySelector('.header-nav');
 const rootDiv = document.getElementById('spa');
 
-
 const routes = {
     '/' : templateHome.outerHTML,
     '/products' : templateProducts.outerHTML,
@@ -63,7 +62,3 @@ function changeClassForNav(bool) {
         nav.classList.remove('nav-bg-product');
     }
 }
-
-
-
-
